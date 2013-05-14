@@ -1,0 +1,29 @@
+[Desktop Entry]
+#Encoding of this file
+Encoding=UTF-8
+ #The name to be shown in the 'Add Widgets' dialog
+Name=Speicherplatzverbrauch
+Comment=Zeigt den verbliebenen Quota
+ #The icon to show in the 'Add Widgets' dialog
+#Icon=battery
+
+ #Tells KDE this is a service of sorts
+Type=Service
+ #Tells KDE this is provides the 'Plasma applet' 
+ServiceTypes=Plasma/Applet
+
+ #The language your plugin is written in
+X-Plasma-API=python
+ #The main entrypoint for your plasmoid
+X-Plasma-MainScript=code/space-left.py
+X-KDE-PluginInfo-Author=Andre Jaenisch
+X-KDE-PluginInfo-Email=AndreJaenisch@googlemail.com
+#The internal name of the plasmoid. Your plasmoid gets installed into ~/.kde/share/apps/plasma/<Name>/
+X-KDE-PluginInfo-Name=space-left
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=
+X-KDE-PluginInfo-Category=Examples
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+#Tells KDE if this plasmoid should be available by default, or if the user needs to jump through hoops to enable it.
+ X-KDE-PluginInfo-EnabledByDefault=true
